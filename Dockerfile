@@ -5,9 +5,6 @@ FROM tensorflow/tensorflow:2.10.0-gpu-jupyter
 RUN apt-get update && apt-get install -y \
     vim \
     libgl1-mesa-glx \
-    && rm -rf /var/lib/apt/lists/*
-
-RUN apt-get update && apt-get install -y \
     libcairo2 \
     libgirepository1.0-dev \
     libgtk-3-dev \
@@ -16,7 +13,7 @@ RUN apt-get update && apt-get install -y \
     gir1.2-gtk-3.0 \
     python3-tk \
     # Additional packages for broader GUI support
-    xvfb \ # X Virtual Framebuffer
+    xvfb \
     xauth \
     xorg \
     dbus-x11 \
