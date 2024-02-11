@@ -1,6 +1,8 @@
 # Use TensorFlow's provided image with GPU support and Jupyter
 FROM tensorflow/tensorflow:2.10.0-gpu-jupyter
 
+RUN apt update && apt upgrade -y
+
 # Run updates and install your desired packages
 RUN apt-get update && apt-get install -y \
     vim \
