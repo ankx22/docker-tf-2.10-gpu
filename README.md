@@ -5,7 +5,7 @@ Has most basic dependencies and more can be added by modifying the [Dockerfile](
 	- Clone the repo
   - In the repo folder open a bash terminal and run
     ```bash
-    docker build -t tf2.10.
+    docker build -t tf2.10 .
     ```
   - Once the download and setup of the image is complete just run the docker image by
     ```bash
