@@ -5,8 +5,6 @@ RUN apt update && apt upgrade -y
 
 # Run updates and install your desired packages
 RUN apt-get update && apt-get install -y \
-    pydot \
-    seaborn \
     vim \
     libgl1-mesa-glx \
     libcairo2 \
